@@ -1,0 +1,46 @@
+.img-container {
+  cursor: pointer;
+  overflow: hidden;
+}
+.img-container:hover .img-content-hover {
+  display: block;
+}
+
+.img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.img1:hover {
+  transform: scale(1.05);
+}
+
+.img-content-hover {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  font-weight: 400;
+  margin-top: 1.1rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: #787878;
+}
+
+.img-content {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

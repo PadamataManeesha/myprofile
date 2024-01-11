@@ -1,0 +1,48 @@
+$white: #fff;
+$black: #2e2e2e;
+$gray: #787878;
+$highlight: #ea8478;
+.img-container {
+  cursor: pointer;
+  overflow: hidden;
+  &:hover .img-content-hover {
+    display: block;
+  }
+}
+
+.img1 {
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img-content-hover {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: $white;
+  font-weight: 400;
+  margin-top: 1.1rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: $gray;
+}
+.img-content {
+  display: none;
+}
